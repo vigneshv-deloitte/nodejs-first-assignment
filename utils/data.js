@@ -38,4 +38,20 @@ let playersList=[
         playerUniqueId:101
     }
 ]
-module.exports= {teams, playersList}
+
+let matches=[
+    {
+        id:1,
+        date:"01-02-2024",
+        teamOne: "RCB",
+        teamTwo:"CSK"
+    },
+    {
+        id:2,
+        date:"01-29-2024",
+        teamOne: "RCB",
+        teamTwo:"CSK"
+    },
+]
+
+module.exports= {teams, playersList, matches}

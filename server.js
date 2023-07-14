@@ -13,4 +13,8 @@ app.use("/teams",teamsRouter)
 const playersRouter= require("./routes/playersRoutes")
 app.use("/players", playersRouter)
 
+
+const matchesRouter= require("./routes/matchesRoutes")
+app.use("/matches", matchesRouter)
+
 app.listen(3000)
