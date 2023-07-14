@@ -3,10 +3,6 @@ const app= express()
 
 app.use(express.json())
 
-app.get("/",(req,res)=>{
-    console.log("Home Page")
-})
-
 const teamsRouter= require("./routes/teamsRoutes")
 app.use("/teams",teamsRouter)
 
@@ -20,4 +16,6 @@ app.use("/matches", matchesRouter)
 const leaderboardRouter= require("./routes/leaderboardRoutes")
 app.use("/leaderboard", leaderboardRouter)
 
-app.listen(3000)
+const server=app.listen(3000)
+
+module.exports=server;
